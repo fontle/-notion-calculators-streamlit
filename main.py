@@ -13,6 +13,7 @@ a = st.number_input("Preference factor (a)", 0.0, 1.0, value=0.5, step=0.01)
 col1,col2 = st.columns(2)
 col1.latex("q_1^*=\cfrac{a(p_1e_1+p_2e_2)}{p_1}")
 col2.latex("q_1^*=\cfrac{(1-a)(p_1e_1+p_2e_2)}{p_2}")
+""
 col1.write(f"Optimal $q_1$: {(a*(p1*e1+e2*p2))/p1}")
 col2.write(f"Optimal $q_2$: {((1-a)*(p1*e1+p2*e2))/p2}")
 
