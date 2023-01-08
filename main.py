@@ -10,7 +10,8 @@ e1 = col1.number_input("Endowment of good 1", value=1)
 e2 = col2.number_input("Endowment of good 2", value=1)
 a = st.number_input("Preference factor (a)", 0.0, 1.0, value=0.5, step=0.01)
 
-col1,col2 = st.columns(2)
+tab1, tab2 = st.tabs(["Cobb-Douglas", "Stone-Geary"])
+col1,col2 = tab1.columns(2)
 col1.latex("q_1^*=\cfrac{a(p_1e_1+p_2e_2)}{p_1}")
 col2.latex("q_1^*=\cfrac{(1-a)(p_1e_1+p_2e_2)}{p_2}")
 ""
