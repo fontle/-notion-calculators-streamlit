@@ -1,13 +1,13 @@
 import streamlit as st
 import numpy as np 
-st.title("Notion Calculators for Choice and Optimal Input Demands")
+st.title("Cobb-Douglas Gross Demand Calculator")
 
 
 y = st.number_input("Output")
 col1,col2 = st.columns(2)
 
-p1= col1.number_input("Price of good 1")
-p2 = col2.number_input("Price of good 2")
+p1= col1.number_input("Price of good 1", 0.01)
+p2 = col2.number_input("Price of good 2", 0.01)
 e1 = col1.number_input("Endowment of good 1")
 e2 = col2.number_input("Endowment of good 2")
 a = st.slider("Preference factor (a)", 0, 1)
