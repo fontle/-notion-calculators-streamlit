@@ -2,13 +2,13 @@ import streamlit as st
 import numpy as np 
 st.title("Microeconomics")
 
-class Lecture(st.container):
+class Lecture:
     def __init__(self, label:str):
-        super().__init__(label) 
-        self.title = title
+        self.container = st.container(self.label)
+        self.label = label
 
     def build(self): 
-        st.sidebar.write(self.title)
+        st.sidebar.write(self.label)
 
     def graph(self): 
         pass 
