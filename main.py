@@ -7,10 +7,8 @@ class Lecture:
         self.label = label
 
     def build(self): 
-        st.sidebar.write(self.label)
-        with st.expander(self.label):
-            st.write("This is inside")
-            
+        st.heading(label)
+
     def graph(self): 
         pass 
 
