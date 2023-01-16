@@ -11,7 +11,7 @@ class page:
         st.sidebar.markdown(f"[{self.label}]('#'{self.label})")
 
 
-        
+
     def graph(self): 
         pass 
 
@@ -45,5 +45,5 @@ class page:
 # col1.write(f"Optimal $q_1$: {(a*m)/p1}")
 # col2.write(f"Optimal $q_2$: {((1-a)*m)/p2}")
 
-consumer_theory = page("Consumer Theory")
+consumer_theory = page("ConsumerTheory")
 consumer_theory.build()
