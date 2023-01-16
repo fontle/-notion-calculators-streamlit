@@ -3,8 +3,9 @@ import numpy as np
 st.title("Microeconomics")
 
 class Lecture(st.container):
-    def __init__(self):
-        super().__init__(self) 
+    def __init__(self, title:str):
+        super().__init__() 
+        self.title = title
 
     def build(self): 
         st.sidebar.write(self.title)
