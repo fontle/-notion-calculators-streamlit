@@ -3,8 +3,8 @@ import numpy as np
 st.title("Microeconomics")
 
 class Lecture(st.container):
-    def __init__(self, title:str):
-        super().__init__() 
+    def __init__(self, label:str):
+        super().__init__(label) 
         self.title = title
 
     def build(self): 
@@ -44,4 +44,5 @@ col2.latex("q^*_2=\cfrac{(1-a)m}{p_2}")
 col1.write(f"Optimal $q_1$: {(a*m)/p1}")
 col2.write(f"Optimal $q_2$: {((1-a)*m)/p2}")
 
-consumer_theory = Lecture()
+consumer_theory = Lecture("Consumer Theory")
+consumer_theory.build()
