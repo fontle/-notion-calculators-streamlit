@@ -2,12 +2,12 @@ import streamlit as st
 import numpy as np 
 st.title("Microeconomics")
 
+class Lecture:
+    def __init__(self, title:str): 
+        self.title = title
 
-#-------------------------------------------------------------
-#                           UI
-#-------------------------------------------------------------
-
-st.sidebar.expander("This is an expander")    
+    def build(self): 
+        st.sidebar.write(title)
 
 st.header("Choice with Cobb-Douglas")
 col1,col2 = st.columns(2)
