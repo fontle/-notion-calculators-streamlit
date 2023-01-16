@@ -4,12 +4,13 @@ st.title("Microeconomics")
 
 class Lecture:
     def __init__(self, label:str):
-        self.container = st.container(label)
         self.label = label
 
     def build(self): 
         st.sidebar.write(self.label)
-
+        with st.expander(self.label):
+            st.write("This is inside")
+            
     def graph(self): 
         pass 
 
