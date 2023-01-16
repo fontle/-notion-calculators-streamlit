@@ -5,10 +5,11 @@ st.title("Microeconomics")
 class page:
     def __init__(self, label:str, subs=[]):
         self.label = label
-
+        self.anchor = self.label.lower().replace(" ", "-")
     def build(self): 
         st.header(self.label)
-        st.sidebar.markdown(f"[{self.label}]({self.label})")
+
+        st.sidebar.markdown(f"[{self.label}]({self.label.lower()})")
 
 
 
@@ -45,5 +46,5 @@ class page:
 # col1.write(f"Optimal $q_1$: {(a*m)/p1}")
 # col2.write(f"Optimal $q_2$: {((1-a)*m)/p2}")
 
-consumer_theory = page("ConsumerTheory")
+consumer_theory = page("Consumer Theory")
 consumer_theory.build()
