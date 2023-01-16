@@ -2,12 +2,19 @@ import streamlit as st
 import numpy as np 
 st.title("Microeconomics")
 
-class Lecture:
-    def __init__(self, title:str): 
+class Lecture(st.container):
+    def __init__(self, title:str):
+        super().__init__() 
         self.title = title
 
     def build(self): 
         st.sidebar.write(self.title)
+
+    def graph(self): 
+        pass 
+
+    def latex(self):
+
 
 st.header("Choice with Cobb-Douglas")
 col1,col2 = st.columns(2)
