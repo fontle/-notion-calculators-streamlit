@@ -7,7 +7,7 @@ class Lecture:
         self.label = label
 
     def build(self): 
-        st.sidebar.write(self)
+        st.sidebar.write(self.label)
         st.heading(self.label)
 
     def graph(self): 
