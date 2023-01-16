@@ -7,9 +7,11 @@ class page:
         self.label = label
 
     def build(self): 
-        st.sidebar.markdown(f"[{self.label}]('#'{self.label})")
         st.header(self.label)
+        st.sidebar.markdown(f"[{self.label}]('#'{self.label})")
 
+
+        
     def graph(self): 
         pass 
 
