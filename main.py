@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np 
-st.title("Choice and Optimal Demand Calculators")
+st.title("Title")
 
 st.header("Choice with Cobb-Douglas")
 col1,col2 = st.columns(2)
