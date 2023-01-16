@@ -7,8 +7,7 @@ st.title("Microeconomics")
 #                           UI
 #-------------------------------------------------------------
 
-with st.expander("Consumer Theory"):
-    st.sidebar.write("Consumer Theory")      
+st.sidebar.expander("This is an expander")    
 
 st.header("Choice with Cobb-Douglas")
 col1,col2 = st.columns(2)
