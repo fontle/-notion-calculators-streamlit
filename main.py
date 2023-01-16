@@ -43,4 +43,4 @@ col2.latex("q^*_2=\cfrac{(1-a)m}{p_2}")
 col1.write(f"Optimal $q_1$: {(a*m)/p1}")
 col2.write(f"Optimal $q_2$: {((1-a)*m)/p2}")
 
-consumer_theory = Lecture("Consumer Theory").build()
+consumer_theory = Lecture()
