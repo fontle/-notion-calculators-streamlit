@@ -3,9 +3,8 @@ import numpy as np
 st.title("Microeconomics")
 
 class Lecture(st.container):
-    def __init__(self, title:str):
+    def __init__(self):
         super().__init__(self) 
-        self.title = title
 
     def build(self): 
         st.sidebar.write(self.title)
@@ -15,6 +14,9 @@ class Lecture(st.container):
 
     def latex(self):
         pass
+
+
+
 
 st.header("Choice with Cobb-Douglas")
 col1,col2 = st.columns(2)
