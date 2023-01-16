@@ -3,11 +3,11 @@ import numpy as np
 st.title("Microeconomics")
 
 class page:
-    def __init__(self, label:str, subs=[], ):
+    def __init__(self, label:str, subs=[]):
         self.label = label
 
     def build(self): 
-        st.sidebar.write(self.label)
+        st.sidebar.markdown(f"[{self.label}]('#'{self.label})")
         st.header(self.label)
 
     def graph(self): 
