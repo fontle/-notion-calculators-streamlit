@@ -8,7 +8,7 @@ class page:
 
     def build(self): 
         st.header(self.label)
-        st.sidebar.markdown(f"[{self.label}]('#'{self.label})")
+        st.sidebar.markdown(f"[{self.label}]({self.label})")
 
 
 
