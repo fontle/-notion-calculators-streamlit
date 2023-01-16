@@ -3,7 +3,7 @@ import numpy as np
 st.title("Microeconomics")
 
 class page:
-    def __init__(self, label:str, subs:list, ):
+    def __init__(self, label:str, subs=[], ):
         self.label = label
 
     def build(self): 
