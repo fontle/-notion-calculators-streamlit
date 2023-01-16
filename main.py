@@ -1,7 +1,13 @@
 import streamlit as st
 import numpy as np 
-st.title("Title")
+st.title("Microeconomics")
 
+
+#-------------------------------------------------------------
+#                           UI
+#-------------------------------------------------------------
+sidebar = st.sidebar() 
+sidebar.write("This is the sidebar")
 st.header("Choice with Cobb-Douglas")
 col1,col2 = st.columns(2)
 p1= col1.number_input("Price of good 1", 0.01)
