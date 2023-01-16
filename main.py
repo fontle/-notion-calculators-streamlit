@@ -7,7 +7,7 @@ class Lecture:
         self.title = title
 
     def build(self): 
-        st.sidebar.write(title)
+        st.sidebar.write(self.title)
 
 st.header("Choice with Cobb-Douglas")
 col1,col2 = st.columns(2)
