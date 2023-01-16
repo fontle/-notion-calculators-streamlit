@@ -2,19 +2,19 @@ import streamlit as st
 import numpy as np 
 st.title("Microeconomics")
 
-class Lecture:
-    def __init__(self, label:str):
+class page:
+    def __init__(self, label:str, subs:list, ):
         self.label = label
 
     def build(self): 
         st.sidebar.write(self.label)
-        st.heading(self.label)
+        st.header(self.label)
 
     def graph(self): 
         pass 
 
     def latex(self):
-        pass
+        
 
 
 
@@ -44,5 +44,5 @@ col2.latex("q^*_2=\cfrac{(1-a)m}{p_2}")
 col1.write(f"Optimal $q_1$: {(a*m)/p1}")
 col2.write(f"Optimal $q_2$: {((1-a)*m)/p2}")
 
-consumer_theory = Lecture("Consumer Theory")
+consumer_theory = page("Consumer Theory")
 consumer_theory.build()
