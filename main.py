@@ -5,11 +5,11 @@ st.title("Microeconomics")
 class page:
     def __init__(self, label:str, subs=[]):
         self.label = label
-        self.anchor = self.label.lower().replace("-", " ")
+        self.anchor = self.label.lower().replace(" ", "-")
     def build(self): 
         st.header(self.label)
 
-        st.sidebar.markdown(f"[{self.label}]({self.label.lower()})")
+        st.sidebar.markdown(f"[{self.label}]({self.anchor})")
 
 
 
