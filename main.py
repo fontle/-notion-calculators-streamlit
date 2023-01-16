@@ -6,7 +6,7 @@ class Lecture:
     def __init__(self, label:str):
         self.label = label
 
-    def build(self): ]
+    def build(self): 
         st.sidebar.write(self)
         st.heading(self.label)
 
