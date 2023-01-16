@@ -9,7 +9,7 @@ class page:
     def build(self): 
         st.header(self.label)
 
-        st.sidebar.markdown(f"[{self.label}]({'#'self.anchor})")
+        st.sidebar.markdown(f"[{self.label}]('#'{self.anchor})")
 
 
 
