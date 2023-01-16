@@ -14,8 +14,7 @@ class page:
         pass 
 
     def latex(self):
-        
-
+        pass
 
 
 
