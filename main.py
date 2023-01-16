@@ -14,7 +14,7 @@ class Lecture(st.container):
         pass 
 
     def latex(self):
-
+        pass
 
 st.header("Choice with Cobb-Douglas")
 col1,col2 = st.columns(2)
