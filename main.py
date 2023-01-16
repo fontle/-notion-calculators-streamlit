@@ -4,7 +4,7 @@ st.title("Microeconomics")
 
 class Lecture(st.container):
     def __init__(self, title:str):
-        super().__init__() 
+        super().__init__(self) 
         self.title = title
 
     def build(self): 
